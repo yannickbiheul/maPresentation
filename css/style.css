@@ -215,45 +215,69 @@ header>p {
 
 /* PRESENTATION */
 
-.headerPresentation {
-    background: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.6) 30%), url("../backgrounds/mer.jpg");
-    background-size: cover;
-    background-position: center;
+#quiSuisJe {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 75vh;
-    padding-top: 60px;
-    overflow: hidden;
+    width: 90%;
+    border: 1px solid #000;
+    margin: 70px auto 70px auto;
+    padding: 20px;
+    /* min-height: 50vh; */
 }
 
-.containerSections {
-    width: 100%;
+.texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    height: 90%;
     /* border: 1px solid #000; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
-.section1 {
-    width: 75%;
-    border: 1px solid #000;
+.image {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 70px;
+    width: 40%;
+    height: 90%;
+    /* border: 1px solid #000; */
 }
 
-.presentation1 {
-    width: 95%;
-    border: 1px solid #000;
+.image1 {
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+.image2 {
+    width: 400px;
+    border-radius: 5px;
+}
+
+#parcoursScolaire {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: 90%;
+    border: 1px solid #000;
+    margin: 70px auto 70px auto;
+    /* min-height: 50vh; */
+    padding: 20px;
+}
+
+#parcoursPro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    border: 1px solid #000;
+    margin: 70px auto 70px auto;
+    /* min-height: 50vh; */
+    padding: 20px;
 }
 
 #notice {
