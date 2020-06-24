@@ -99,6 +99,11 @@ nav {
     font-size: 1em;
 }
 
+.nav1>a {
+    text-decoration: none;
+    color: #000;
+}
+
 .nav2 {
     /* border: 1px solid #000; */
     width: 55%;
@@ -117,7 +122,6 @@ nav {
 .nav2>a:hover {
     color: #000;
     text-decoration: underline;
-    font-weight: bold;
 }
 
 .nav3 {
