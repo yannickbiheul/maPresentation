@@ -1,0 +1,410 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.boutonBurger {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid #000; */
+    z-index: 15;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boutonBurger>span {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+}
+
+.menuBurger {
+    position: absolute;
+    top: 64px;
+    left: -250px;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background-color: #fff;
+    transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuBurgerOpen {
+    left: 0;
+}
+
+.menu1 {
+    width: 90%;
+    height: 55%;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu1>a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #333;
+    margin: 15px 0 15px 0;
+}
+
+.menu2 {
+    width: 90%;
+    height: 35%;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu2>a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px 0 10px;
+    font-size: 2em;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 4px #000;
+    overflow: hidden;
+}
+
+.nav1 {
+    /* border: 1px solid #000; */
+    width: 20%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.nav2 {
+    /* border: 1px solid #000; */
+    width: 55%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2>a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px 0 10px;
+}
+
+.nav2>a:hover {
+    color: #000;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav3 {
+    /* border: 1px solid #000; */
+    width: 20%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav3>a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px 0 10px;
+    font-size: 1.6em;
+}
+
+.carteBonjour {
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top: 64px;
+    right: 20px;
+    background-color: #fff;
+    z-index: 15;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.6) 30%), url("../backgrounds/coffee.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+header>h1 {
+    color: #fff;
+    font-size: 3.5em;
+    /* border: 1px solid #fff; */
+    width: 75%;
+    text-align: center;
+}
+
+header>p {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.bouton {
+    /* border: 1px solid #fff; */
+    width: 200px;
+    height: 60px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton>a {
+    text-decoration: none;
+    color: #fff;
+    width: 80%;
+    height: 80%;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px #000;
+    background: linear-gradient(-225deg, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+}
+
+.bouton>a:hover {
+    width: 82%;
+    height: 82%;
+    font-size: 1em;
+    box-shadow: 5px 5px 4px #000;
+}
+
+/* PRESENTATION */
+
+.headerPresentation {
+    background: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.6) 30%), url("../backgrounds/mer.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+.containerSections {
+    width: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 {
+    width: 75%;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.presentation1 {
+    width: 95%;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#notice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.containerNotice {
+    width: 100%;
+    padding: 40px 0 40px 0;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonjour {
+    text-align: center;
+}
+
+.separation {
+    width: 50%;
+    height: 20px;
+    /* border: 1px solid #000; */
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separation>span {
+    width: 100%;
+    height: 0.5px;
+    background-color: #333;
+}
+
+.containerCarte {
+    width: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton2 {
+    /* border: 1px solid #fff; */
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton2>a {
+    width: 60%;
+    height: 60%;
+    background-color: #cd6133;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 4px 4px 4px #000;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carte {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 80px 40px 80px;
+    text-align: center;
+}
+
+.carteImage {
+    height: 50%;
+}
+
+.carteImage>img {
+    height: 150px;
+}
+
+.carteTexte {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .boutonBurger {
+        display: flex;
+    }
+
+    .nav1 {
+        width: 100%;
+    }
+
+    .nav2 {
+        display: none;
+    }
+
+    .nav3 {
+        display: none;
+    }
+
+    header>h1 {
+        font-size: 2.5em;
+    }
+
+    header>p {
+        display: none;
+    }
+
+    .containerNotice {
+        width: 95%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.6) 30%), url("../backgrounds/coffee.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 92vh;
+    }
+    header>h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+    header>p {
+        display: none;
+    }
+}
